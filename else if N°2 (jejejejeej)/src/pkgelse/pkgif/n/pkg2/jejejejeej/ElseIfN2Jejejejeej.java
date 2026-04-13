@@ -69,7 +69,7 @@ public class ElseIfN2Jejejejeej {
         //if (edad < 4) {
           //  System.out.println("entra gratis.");
         //} else if (edad >= 4 && edad <= 18) {
-          //  System.out.println(" precio de la entrada es 5€.");
+          //  System.out.println("precio de la entrada es 5€.");
         //} else {
         //    System.out.println("precio de la entrada es 10€.");
       //  }
@@ -83,7 +83,7 @@ public class ElseIfN2Jejejejeej {
        // String nivel;
         
        // if (puntuacion == 0.0) {
-         //   nivel = "no aprobo";
+         //   nivel = "malo";
        // } else if (puntuacion == 0.4) {
       //      nivel = "bueno";
    //     } else if (puntuacion >= 0.6) {
@@ -104,10 +104,10 @@ public class ElseIfN2Jejejejeej {
   //  }
 //}
 
-      //  System.out.print("Ingrese su edad: ");
+      //  System.out.print("Ingresa tu edad: ");
        // int edad = scanner.nextInt();
 
-        //System.out.print("Ingrese sus ingresos: ");
+        //System.out.print("Ingresa tus ingresos: ");
       //  double ingresos = scanner.nextDouble();
 
       //  if (edad > 16 && ingresos >= 1000) {
