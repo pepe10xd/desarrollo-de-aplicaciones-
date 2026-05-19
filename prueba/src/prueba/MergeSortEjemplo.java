@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package prueba;
+import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  *
@@ -10,94 +12,41 @@ package prueba;
  */
 public class MergeSortEjemplo {
 
-    // Método principal
+
     public static void main(String[] args) {
+        
+Scanner scanner = new Scanner(System.in);
 
-        int[] numeros = {38, 27, 43, 3, 9, 82, 10};
+/*
+      int[] pepe = new int[10];
 
-        System.out.println("Array original:");
-        mostrarArray(numeros);
-
-        mergeSort(numeros, 0, numeros.length - 1);
-
-        System.out.println("Array ordenado:");
-        mostrarArray(numeros);
-    }
-
-    // Método MergeSort
-    public static void mergeSort(int[] array, int izquierda, int derecha) {
-
-        if (izquierda < derecha) {
-
-            int medio = (izquierda + derecha) / 2;
-
-            // Divide la mitad izquierda
-            mergeSort(array, izquierda, medio);
-
-            // Divide la mitad derecha
-            mergeSort(array, medio + 1, derecha);
-
-            // Une las mitades ordenadas
-            merge(array, izquierda, medio, derecha);
-        }
-    }
-
-    // Método para unir arrays
-    public static void merge(int[] array, int izquierda, int medio, int derecha) {
-
-        int tamaño1 = medio - izquierda + 1;
-        int tamaño2 = derecha - medio;
-
-        int[] izquierdaArray = new int[tamaño1];
-        int[] derechaArray = new int[tamaño2];
-
-        // Copiar datos
-        for (int i = 0; i < tamaño1; i++) {
-            izquierdaArray[i] = array[izquierda + i];
+        System.out.println("Ingrese los numeros del 1 al 10");
+        for (int a = 0; a <= 9; a++) {
+            pepe[a] = scanner.nextInt();
         }
 
-        for (int j = 0; j < tamaño2; j++) {
-            derechaArray[j] = array[medio + 1 + j];
-        }
-
-        int i = 0, j = 0;
-        int k = izquierda;
-
-        // Mezclar arrays
-        while (i < tamaño1 && j < tamaño2) {
-
-            if (izquierdaArray[i] <= derechaArray[j]) {
-                array[k] = izquierdaArray[i];
-                i++;
-            } else {
-                array[k] = derechaArray[j];
-                j++;
+        int cantNegativos = 0;
+        for (int a = 0; a <= 9; a++) {
+            if (pepe[a] < 0) {
+                cantNegativos++;
             }
-
-            k++;
         }
+        System.out.println("Hay " + cantNegativos + " numeros negativos.");
 
-        // Copiar elementos restantes
-        while (i < tamaño1) {
-            array[k] = izquierdaArray[i];
-            i++;
-            k++;
+        System.out.print("Son: ");
+        for (int a = 0; a <= 9; a++) {
+            if (pepe[a] < 0) {
+                System.out.print(pepe[a] + " ");
+            }
         }
-
-        while (j < tamaño2) {
-            array[k] = derechaArray[j];
-            j++;
-            k++;
-        }
-    }
-
-    // Mostrar array
-    public static void mostrarArray(int[] array) {
-
-        for (int num : array) {
-            System.out.print(num + " ");
-        }
-
         System.out.println();
+
+
+        Arrays.sort(pepe);
+        System.out.println("Arreglo ordenado:");
+        for (int s : pepe) {
+            System.out.println(s);
+        }
     }
 }
+*/
